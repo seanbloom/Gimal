@@ -1,0 +1,404 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/content_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/assignment" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/wallcolor"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:text="ASSIGNMENT INFORMATION" />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/assignment"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/color_text"
+                android:text="Dead Line"
+                android:layout_gravity="center"
+                android:id="@+id/textView11" />
+
+            <DatePicker
+                android:layout_width="280dp"
+                android:layout_height="150dp"
+                android:id="@+id/datePicker"
+                android:datePickerMode="spinner"
+                android:yearListSelectorColor="@color/wallcolor"
+                android:spinnersShown="true"
+                android:layout_gravity="center"
+                android:outlineProvider="none"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="교수님을 입력하세요 :D"
+                android:text="    :D"
+                android:id="@+id/sos_prof"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                app:met_baseColor="?colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="10"
+                app:met_primaryColor="#9D646E"
+                app:met_singleLineEllipsis="true" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="과목명을 입력하세요 :D"
+                android:text="    :D"
+                android:layout_margin="10dp"
+                android:id="@+id/sos_subject"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                app:met_baseColor="?colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="10"
+                app:met_primaryColor="#9D646E"
+                app:met_singleLineEllipsis="true" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="과제명을 입력하세요 :D"
+                android:text="    :D"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:id="@+id/sos_assignment"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                app:met_baseColor="?colorAccent"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="10"
+                app:met_primaryColor="#9D646E"
+                app:met_singleLineEllipsis="true" />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/gift" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/wallcolor"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:text="GIFTICON" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/gift"
+                android:clickable="true" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/mcdonald"
+                android:layout_marginLeft="28dp"
+                android:id="@+id/sos_mc" />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/starbucks"
+                android:id="@+id/sos_star" />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/burgerking"
+                android:id="@+id/sos_burger" />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/domino"
+                android:id="@+id/sos_domino" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/coffeebean"
+                android:layout_marginLeft="28dp"
+                android:id="@+id/sos_coffeebean" />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/jaws"
+                android:id="@+id/sos_jaws" />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/donkin"
+                android:id="@+id/sos_donkin" />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/tomntoms"
+                android:id="@+id/sos_tom" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/assignment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/wallcolor"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:text="SPECIFICATION" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/assignment"
+                android:clickable="true" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:ems="10"
+                android:id="@+id/editText" />
+
+            <Button
+                android:id="@+id/sos_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="    CONFIRM    "
+                android:background="@drawable/rounded_corner1"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.DrawerLayout>
+
+
+
+<!--<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:padding="16dp"-->
+<!--android:theme="@style/ThemeOverlay.AppCompat.Dark"-->
+<!--android:orientation="vertical"-->
+<!--android:gravity="bottom"-->
+<!--android:clickable="true"-->
+<!--android:weightSum="1"-->
+<!--android:columnCount="2"-->
+<!--android:rowCount="5">-->
+
+<!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:textColor="@color/color_text"-->
+    <!--android:text="Dead Line"-->
+    <!--android:layout_row="0"-->
+    <!--android:layout_column="0"-->
+    <!--android:layout_marginLeft="40dp"-->
+    <!--android:id="@+id/textView11" />-->
+
+<!--<DatePicker-->
+    <!--android:layout_width="280dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_row="1"-->
+    <!--android:layout_column="0"-->
+    <!--android:layout_rowSpan="2"-->
+    <!--android:id="@+id/datePicker"-->
+    <!--android:datePickerMode="spinner"-->
+    <!--android:spinnersShown="true"-->
+    <!--android:background="@color/color_text"-->
+    <!--android:outlineProvider="none"-->
+    <!--android:layout_gravity="left" />-->
+
+
+<!--<com.rengwuxian.materialedittext.MaterialEditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="교수님을 입력하세요 :D"-->
+    <!--android:text="    :D"-->
+    <!--android:id="@+id/teacher"-->
+    <!--android:layout_row="0"-->
+    <!--android:layout_column="1"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textSize="15sp"-->
+    <!--app:met_baseColor="?colorAccent"-->
+    <!--app:met_floatingLabel="highlight"-->
+    <!--app:met_maxCharacters="10"-->
+    <!--app:met_primaryColor="#9D646E"-->
+    <!--app:met_singleLineEllipsis="true" />-->
+<!--<com.rengwuxian.materialedittext.MaterialEditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="과목명을 입력하세요 :D"-->
+    <!--android:text="    :D"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:id="@+id/subject"-->
+    <!--android:layout_row="1"-->
+    <!--android:layout_column="1"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textSize="15sp"-->
+    <!--app:met_baseColor="?colorAccent"-->
+    <!--app:met_floatingLabel="highlight"-->
+    <!--app:met_maxCharacters="10"-->
+    <!--app:met_primaryColor="#9D646E"-->
+    <!--app:met_singleLineEllipsis="true" />-->
+<!--<com.rengwuxian.materialedittext.MaterialEditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_row="2"-->
+    <!--android:layout_column="1"-->
+    <!--android:hint="과제명을 입력하세요 :D"-->
+    <!--android:text="    :D"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:id="@+id/nickEdt"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textSize="15sp"-->
+    <!--app:met_baseColor="?colorAccent"-->
+    <!--app:met_floatingLabel="highlight"-->
+    <!--app:met_maxCharacters="10"-->
+    <!--app:met_primaryColor="#9D646E"-->
+    <!--app:met_singleLineEllipsis="true" />-->
+
+
+
+
+<!--</GridLayout>-->

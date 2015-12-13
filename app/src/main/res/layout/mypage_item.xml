@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+                app:clickToClose="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="Hover"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/assignment"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imageView7" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/item_helper" />
+            </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:tag="Bottom3"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignParentTop="true" />
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text ="과목명 :"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/imageview"
+                    android:layout_toEndOf="@+id/imageview"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="교수님 :"
+                    android:id="@+id/textView9"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignLeft="@+id/tv"
+                    android:layout_alignStart="@+id/tv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="과제명 :"
+                    android:id="@+id/textView10"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@+id/textView9"
+                    android:layout_alignLeft="@+id/textView9"
+                    android:layout_alignStart="@+id/textView9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/item_subject"
+                    android:layout_alignTop="@+id/tv"
+                    android:layout_toRightOf="@+id/tv"
+                    android:layout_toEndOf="@+id/tv"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/item_prof"
+                    android:layout_above="@+id/textView10"
+                    android:layout_alignLeft="@+id/item_subject"
+                    android:layout_alignStart="@+id/item_subject" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/item_assign"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignTop="@+id/textView10"
+                    android:layout_alignLeft="@+id/item_prof"
+                    android:layout_alignStart="@+id/item_prof" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 14 "
+                    android:background="@drawable/rounded_corner"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/item_num"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/item_assign"
+                    android:layout_alignLeft="@+id/textView10"
+                    android:layout_alignStart="@+id/textView10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NickName"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_nick"
+                    android:id="@+id/nicknametext"
+                    android:layout_alignTop="@+id/item_num"
+                    android:layout_toRightOf="@+id/textView10"
+                    android:layout_toEndOf="@+id/textView10" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/item_profile"
+                    android:layout_alignTop="@+id/item_num"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/nicknametext"/>
+
+            </RelativeLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>
